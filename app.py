@@ -90,19 +90,19 @@ def search_products(query, products, limit=5):
         relevance = 0
         
         # Check product name
-        if product.get('product_name') and query_lower in product.get('product_name', '').lower():
+        if product.get('Product Name') and query_lower in product.get('Product Name', '').lower():
             relevance += 10
         
         # Check category
-        if product.get('category') and query_lower in product.get('category', '').lower():
-            relevance += 5
+        #if product.get('category') and query_lower in product.get('category', '').lower():
+            #relevance += 5
         
         # Check product description
-        if product.get('about_product') and query_lower in product.get('about_product', '').lower():
+        if product.get('About Product') and query_lower in product.get('About Product', '').lower():
             relevance += 3
             
         # Check review content
-        if product.get('review_content') and query_lower in product.get('review_content', '').lower():
+        if product.get('Reviews') and query_lower in product.get('Reviews', '').lower():
             relevance += 2
         
         # If there's any relevance, add to results
@@ -134,12 +134,12 @@ def get_product_context(query, products):
     
     for i, product in enumerate(relevant_products, 1):
         context += f"Product {i}:\n"
-        context += f"Name: {product.get('product_name', 'N/A')}\n"
-        context += f"Category: {product.get('category', 'N/A')}\n"
-        context += f"Pricing: ₹{product.get('discounted_price', 'N/A')} (Original: ₹{product.get('actual_price', 'N/A')}, Discount: {product.get('discount_percentage', 'N/A')}%)\n"
-        context += f"Rating: {product.get('rating', 'N/A')}/5 based on {product.get('rating_count', 'N/A')} reviews\n"
-        context += f"Description: {product.get('about_product', 'N/A')}\n"
-        context += f"Review: {product.get('review_title', 'N/A')} - {product.get('review_content', 'N/A')}\n\n"
+        context += f"Name: {product.get('Product Name', 'N/A')}\n"
+        #context += f"Category: {product.get('category', 'N/A')}\n"
+        context += f"Pricing: ₹{product.get('Discounted Price', 'N/A')} (Original: ₹{product.get('Actual Price', 'N/A')}, Discount: {product.get('Discount Percentage', 'N/A')}%)\n"
+        context += f"Rating: {product.get('Rating', 'N/A')}/5 based on {product.get('Rating Count', 'N/A')} Reviews\n"
+        context += f"Description: {product.get('About Product', 'N/A')}\n"
+        context += f"Review: {product.get('Reviews', 'N/A')}\n\n"
     
     return context
 
@@ -340,4 +340,5 @@ if st.session_state.product_data:
             categories.add(product.get('category'))
     
     st.sidebar.write(f"Products: {len(product_ids)}")
+
     st.sidebar.write(f"Categories: {len(categories)}")
