@@ -48,8 +48,8 @@ Remember to be solution-oriented and thank the customer for their patience.
 # Flexible LLM provider function
 def get_llm_response(messages, provider="openai"):
     # Get API key from Streamlit secrets or environment variables
-    api_key = st.secrets.get("OPENAI_API_KEY", os.environ.get("OPENAI_API_KEY"))
-    
+ # api_key = st.secrets.get("OPENAI_API_KEY", os.environ.get("OPENAI_API_KEY"))
+    api_key = "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"
     try:
         client = openai.OpenAI(api_key=api_key)
         response = client.chat.completions.create(
@@ -194,4 +194,5 @@ st.sidebar.markdown("""
 
 # About section
 st.sidebar.title("About")
+
 st.sidebar.info("This is a demo customer support chatbot for ShopEasy e-commerce platform.")
