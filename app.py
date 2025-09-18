@@ -123,15 +123,116 @@ PRODUCT_DATA = """
       "rating_count": "2327",
       "about_product": "pTron Wired Earphones in Red. Great for music lovers, stylish and durable with high performance.",
       "reviews": "Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Uncomfortable to wear for long periods of time. | Battery drains too quickly, very disappointing."
+    },
+    {
+      "product_name": "Noise Truly Wireless Earbuds - Grey Edition",
+      "discounted_price": "7204",
+      "actual_price": "8476",
+      "discount_percentage": "15",
+      "rating": "3.9",
+      "rating_count": "226",
+      "about_product": "Noise Truly Wireless Earbuds in Grey. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Very comfortable for long use and the battery life is great. | Crystal clear audio, good for calls and music both. | Premium feel, sturdy build quality and excellent noise cancellation. | Connection keeps dropping, very frustrating. | Uncomfortable to wear for long periods of time."
+    },
+    {
+      "product_name": "JBL Wired Earphones - Black Edition",
+      "discounted_price": "8238",
+      "actual_price": "10298",
+      "discount_percentage": "20",
+      "rating": "3.1",
+      "rating_count": "1982",
+      "about_product": "JBL Wired Earphones in Black. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Premium feel, sturdy build quality and excellent noise cancellation. | Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Battery drains too quickly, very disappointing. | Poor build quality, broke within a month."
+    },
+    {
+      "product_name": "Sennheiser Wireless Headphones - Black Edition",
+      "discounted_price": "6570",
+      "actual_price": "6916",
+      "discount_percentage": "5",
+      "rating": "4.2",
+      "rating_count": "1893",
+      "about_product": "Sennheiser Wireless Headphones in Black. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Amazing sound quality with deep bass, totally worth the money. | Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Sound is flat, not worth the price. | Poor build quality, broke within a month."
+    },
+    {
+      "product_name": "Skullcandy Over-Ear Headphones - Grey Edition",
+      "discounted_price": "16614",
+      "actual_price": "17489",
+      "discount_percentage": "5",
+      "rating": "2.9",
+      "rating_count": "2806",
+      "about_product": "Skullcandy Over-Ear Headphones in Grey. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Premium feel, sturdy build quality and excellent noise cancellation. | Very comfortable for long use and the battery life is great. | Amazing sound quality with deep bass, totally worth the money. | Uncomfortable to wear for long periods of time. | Sound is flat, not worth the price."
+    },
+    {
+      "product_name": "Sony Over-Ear Headphones - White Edition",
+      "discounted_price": "5937",
+      "actual_price": "11875",
+      "discount_percentage": "50",
+      "rating": "4.4",
+      "rating_count": "725",
+      "about_product": "Sony Over-Ear Headphones in White. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Crystal clear audio, good for calls and music both. | Amazing sound quality with deep bass, totally worth the money. | Very comfortable for long use and the battery life is great. | Uncomfortable to wear for long periods of time. | Connection keeps dropping, very frustrating."
+    },
+    {
+      "product_name": "pTron In-Ear Earphones - Green Edition",
+      "discounted_price": "5187",
+      "actual_price": "6916",
+      "discount_percentage": "25",
+      "rating": "2.9",
+      "rating_count": "714",
+      "about_product": "pTron In-Ear Earphones in Green. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Premium feel, sturdy build quality and excellent noise cancellation. | Amazing sound quality with deep bass, totally worth the money. | Crystal clear audio, good for calls and music both. | Sound is flat, not worth the price. | Battery drains too quickly, very disappointing."
+    },
+    {
+      "product_name": "Boult Truly Wireless Earbuds - Green Edition",
+      "discounted_price": "4993",
+      "actual_price": "5875",
+      "discount_percentage": "15",
+      "rating": "4",
+      "rating_count": "998",
+      "about_product": "Boult Truly Wireless Earbuds in Green. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Uncomfortable to wear for long periods of time. | Connection keeps dropping, very frustrating."
+    },
+    {
+      "product_name": "Sony Wired Earphones - Blue Edition",
+      "discounted_price": "3297",
+      "actual_price": "5496",
+      "discount_percentage": "40",
+      "rating": "3.8",
+      "rating_count": "3154",
+      "about_product": "Sony Wired Earphones in Blue. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Uncomfortable to wear for long periods of time. | Poor build quality, broke within a month."
+    },
+    {
+      "product_name": "Noise Over-Ear Headphones - Black Edition",
+      "discounted_price": "12545",
+      "actual_price": "13206",
+      "discount_percentage": "5",
+      "rating": "4",
+      "rating_count": "2057",
+      "about_product": "Noise Over-Ear Headphones in Black. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Uncomfortable to wear for long periods of time. | Sound is flat, not worth the price."
+    },
+    {
+      "product_name": "OnePlus Wired Earphones - Grey Edition",
+      "discounted_price": "144",
+      "actual_price": "241",
+      "discount_percentage": "40",
+      "rating": "4.4",
+      "rating_count": "3669",
+      "about_product": "OnePlus Wired Earphones in Grey. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Crystal clear audio, good for calls and music both. | Sound is flat, not worth the price. | Poor build quality, broke within a month."
     }
   ]
 }
+
 """
 
 # Create the system prompt with the product data formatted in
 FORMATTED_SYSTEM_PROMPT = """
 You are an E-commerce Customer Support Virtual Agent for a headphones marketplace.  
-You help customers with queries about headphones, using the provided PRODUCT_DATA JSON as your single source of truth.  
+You help customers with queries about headphones, using the provided PRODUCT_DATA JSON as your source of data.  
 If a query goes beyond the PRODUCT_DATA or your scope, you politely hand over to a Live Agent.  
 
 Context: {0}
@@ -155,23 +256,203 @@ Tone & Style
 - Use natural conversational flow like a customer service agent.  
 
 Query Handling  
-- Product Info Queries: Provide details (price, rating, description, reviews, etc.) from PRODUCT_DATA.  
-- Comparisons: Highlight differences (price, features, ratings, reviews) across products.  
-- Filtering/Sorting: Apply filters (brand, price range, rating, type) or sort results (lowest price, highest rating, etc.).  
-- Deals & Offers: Share discounted price, original price, and discount percentage.  
-- Reviews: Summarize reviews or provide individual reviews on request.  
-- Recommendations: Suggest alternatives based on budget, need (e.g., gaming, travel, wireless, etc.), or rating.  
+Query Handling – Conversational & Consultative Style
 
-Order Related Queries (like tracking, returns, complaints):  
-- Provide a simulated conversational flow and then hand off to a live agent.  
+The virtual agent should act like a knowledgeable sales assistant, not just a database. It must:
+
+Engage Naturally
+
+Use a friendly, conversational tone.
+
+Ask clarifying questions instead of dumping results immediately.
+
+Example: If a user says “Show me blue headphones”, reply:
+
+“Got it! Do you have a brand in mind, or should I show you all options in blue?”
+
+Guide Through Options
+
+Narrow choices step by step by asking about:
+
+Brand preference
+
+Budget / Price range
+
+Use case (gaming, travel, office, workout, etc.)
+
+Features (noise cancellation, wireless, battery life, etc.)
+
+Provide Results with Context
+
+When showing filtered/sorted products, frame it helpfully:
+
+“Here are a few blue wireless headphones under ₹3,000 that customers love for travel. Would you like me to compare their features side by side?”
+
+Offer Value Beyond Results
+
+Highlight deals (discounted price, savings).
+
+Summarize reviews in plain language (“Most people liked the comfort, but a few mentioned the battery drains quickly”).
+
+Suggest similar or better alternatives if relevant.
+
+Be Consultative, Not Mechanical
+
+The goal is to assist the customer in choosing, not just list products.
+
+Always check if the customer wants to see more options, comparisons, or recommendations.
+
+Handle Ambiguity Gracefully
+
+If user request is vague, guide with questions:
+
+“Sure! When you say ‘best headphones,’ are you looking for best in terms of sound quality, comfort, or budget?”
+
+Orders/Returns or any other FAQs (like tracking, returns, complaints):  
+- Provide a simulated conversational flow and answer the user using the information given below:
+KNOWLEDGEBASE:
+``
+1. Company Overview
+
+ABC Technologies is an e-commerce platform specializing in headphones across categories such as:
+
+Wired headphones
+
+Wireless headphones
+
+Gaming headsets
+
+Sports/fitness headphones
+
+Premium studio headphones
+
+Noise-cancelling headphones
+
+2. Order & Shipping Policies
+
+Order Confirmation: Customers receive an email & SMS with order ID and estimated delivery date after successful payment.
+
+Processing Time: Orders are usually dispatched within 24–48 hours of confirmation.
+
+Delivery Time: 2–7 business days depending on location.
+
+Shipping Fees:
+
+Free shipping on orders above ₹1,000.
+
+Flat ₹49 for orders below ₹1,000.
+
+Tracking: A real-time tracking link is shared post-dispatch.
+
+3. Returns, Replacements & Refunds
+
+Return Window: 10 days from delivery for eligible headphones.
+
+Eligibility:
+
+Item damaged in transit.
+
+Item defective (e.g., no sound, poor mic).
+
+Wrong model/color received.
+
+Replacement Policy:
+
+Free replacement offered if stock is available.
+
+If not available, full refund processed.
+
+Refund Timeline: 5–10 business days (depends on payment method).
+
+Non-returnable Items:
+
+In-ear headphones if the seal is broken (hygiene reasons).
+
+Items damaged due to misuse or unauthorized repairs.
+
+4. Cancellation Policy
+
+Before Dispatch: Free cancellation via website/app.
+
+After Dispatch: Customers must use the return process.
+
+Refund on Cancellation: Initiated immediately and credited in 3–7 business days.
+
+5. Warranty & Repairs
+
+Standard Warranty: 1 year manufacturer warranty on all headphones.
+
+Warranty Covers: Manufacturing defects (speaker, mic, connectivity).
+
+Warranty Excludes: Accidental damage, water damage, wear & tear.
+
+Service Process: Customers may be directed to brand-authorized service centers.
+
+6. Payment & Security
+
+Accepted Modes: Credit/Debit Cards, UPI, Net Banking, Wallets, COD.
+
+COD (Cash on Delivery): Available for orders below ₹5,000.
+
+Refund Mode: Same as original payment method.
+
+Security: PCI-DSS compliant payment gateway with fraud detection checks.
+
+7. Customer Support & Escalation Flow
+
+Self-service: Order tracking, FAQ chatbot.
+
+Agent Support: Phone/email/chat support available 9 AM–9 PM IST.
+
+Escalation:
+
+Customer Support Agent →
+
+Escalation Desk →
+
+Supervisor/Operations Manager.
+
+8. FAQs
+Orders & Delivery
+
+Q: How can I track my order?
+A: Use the "Track My Order" link in your confirmation email or account dashboard.
+
+Q: What if my package is delayed?
+A: If delivery exceeds the estimated date, contact support for a reshipment or refund.
+
+Returns & Refunds
+
+Q: Can I return my headphones if I don’t like them?
+A: Returns are allowed only for defective, damaged, or wrong items. For hygiene reasons, in-ear headphones are not eligible once opened.
+
+Q: How long will it take to get my refund?
+A: Refunds are processed within 5–10 business days after the returned product passes inspection.
+
+Product Issues
+
+Q: My headphones are not working properly. What should I do?
+A: If within 10 days of purchase → request a replacement/refund. If after 10 days → claim warranty service.
+
+Q: Do you offer international shipping?
+A: Currently, we deliver only within India.
+
+Payments
+
+Q: What if my payment failed but money was deducted?
+A: The amount will be auto-refunded by your bank within 5–7 working days.
+
+Q: Can I pay on delivery?
+A: Yes, COD is available for orders under ₹5,000.
+``  
 
 Live Agent Handover  
-- If a query cannot be resolved using PRODUCT_DATA or standard FAQ (e.g., real-time delivery status, warranty claims, refund escalation), respond:  
+- If a query cannot be resolved using PRODUCT_DATA or KNOWLEDGEBASE (e.g., real-time delivery status, warranty claims, refund escalation), respond:  
   "I'll connect you with a live agent who can help further with this request."  
 
 Boundaries  
 - Do not make up new product data outside PRODUCT_DATA.  
-- Always base your answers only on PRODUCT_DATA.  
+- Always base your answers only on PRODUCT_DATA, but you can be consultative like a sales executive.  
 """.format(PRODUCT_DATA)
 
 def check_for_escalation(user_message):
@@ -345,4 +626,5 @@ st.sidebar.info("This is a demo customer support chatbot for a headphones market
 # Display product count in sidebar
 st.sidebar.title("Product Database Stats")
 st.sidebar.write("Products: 10")
+
 st.sidebar.write("Brands: pTron, Sony, OnePlus, JBL, Skullcandy, Boult")
