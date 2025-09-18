@@ -40,67 +40,158 @@ ORDERS = {
 
 # Escalation triggers
 ESCALATION_KEYWORDS = ["fraud", "dispute", "human", "agent", "supervisor", "manager", "speak to someone", "real person"]
+PRODUCT_DATA = """
+{
+  "products": [
+    {
+      "product_name": "pTron Wired Earphones - Blue Edition",
+      "discounted_price": "594",
+      "actual_price": "661",
+      "discount_percentage": "10",
+      "rating": "4.8",
+      "rating_count": "464",
+      "about_product": "pTron Wired Earphones in Blue. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Premium feel, sturdy build quality and excellent noise cancellation. | Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Battery drains too quickly, very disappointing. | Uncomfortable to wear for long periods of time."
+    },
+    {
+      "product_name": "pTron Wireless Headphones - Grey Edition",
+      "discounted_price": "15948",
+      "actual_price": "19935",
+      "discount_percentage": "20",
+      "rating": "2.6",
+      "rating_count": "4096",
+      "about_product": "pTron Wireless Headphones in Grey. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Premium feel, sturdy build quality and excellent noise cancellation. | Amazing sound quality with deep bass, totally worth the money. | Very comfortable for long use and the battery life is great. | Sound is flat, not worth the price. | Poor build quality, broke within a month."
+    },
+    {
+      "product_name": "Sony In-Ear Earphones - Blue Edition",
+      "discounted_price": "7242",
+      "actual_price": "8047",
+      "discount_percentage": "10",
+      "rating": "2.9",
+      "rating_count": "4993",
+      "about_product": "Sony In-Ear Earphones in Blue. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Crystal clear audio, good for calls and music both. | Battery drains too quickly, very disappointing. | Connection keeps dropping, very frustrating."
+    },
+    {
+      "product_name": "OnePlus Over-Ear Headphones - White Edition",
+      "discounted_price": "4213",
+      "actual_price": "7023",
+      "discount_percentage": "40",
+      "rating": "4.7",
+      "rating_count": "999",
+      "about_product": "OnePlus Over-Ear Headphones in White. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Very comfortable for long use and the battery life is great. | Crystal clear audio, good for calls and music both. | Premium feel, sturdy build quality and excellent noise cancellation. | Sound is flat, not worth the price. | Battery drains too quickly, very disappointing."
+    },
+    {
+      "product_name": "Sony In-Ear Earphones - Blue Edition",
+      "discounted_price": "14672",
+      "actual_price": "18341",
+      "discount_percentage": "20",
+      "rating": "4.3",
+      "rating_count": "1773",
+      "about_product": "Sony In-Ear Earphones in Blue. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Crystal clear audio, good for calls and music both. | Poor build quality, broke within a month. | Sound is flat, not worth the price."
+    },
+    {
+      "product_name": "JBL Wireless Headphones - Red Edition",
+      "discounted_price": "6711",
+      "actual_price": "13423",
+      "discount_percentage": "50",
+      "rating": "2.5",
+      "rating_count": "4897",
+      "about_product": "JBL Wireless Headphones in Red. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Crystal clear audio, good for calls and music both. | Premium feel, sturdy build quality and excellent noise cancellation. | Amazing sound quality with deep bass, totally worth the money. | Battery drains too quickly, very disappointing. | Uncomfortable to wear for long periods of time."
+    },
+    {
+      "product_name": "Skullcandy Truly Wireless Earbuds - Blue Edition",
+      "discounted_price": "13405",
+      "actual_price": "19151",
+      "discount_percentage": "30",
+      "rating": "4.6",
+      "rating_count": "4603",
+      "about_product": "Skullcandy Truly Wireless Earbuds in Blue. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Amazing sound quality with deep bass, totally worth the money. | Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Sound is flat, not worth the price. | Uncomfortable to wear for long periods of time."
+    },
+    {
+      "product_name": "JBL In-Ear Earphones - White Edition",
+      "discounted_price": "4083",
+      "actual_price": "5833",
+      "discount_percentage": "30",
+      "rating": "3.5",
+      "rating_count": "2195",
+      "about_product": "JBL In-Ear Earphones in White. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Amazing sound quality with deep bass, totally worth the money. | Very comfortable for long use and the battery life is great. | Crystal clear audio, good for calls and music both. | Sound is flat, not worth the price. | Poor build quality, broke within a month."
+    },
+    {
+      "product_name": "Boult Wireless Headphones - Green Edition",
+      "discounted_price": "4763",
+      "actual_price": "7939",
+      "discount_percentage": "40",
+      "rating": "2.8",
+      "rating_count": "1472",
+      "about_product": "Boult Wireless Headphones in Green. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Amazing sound quality with deep bass, totally worth the money. | Battery drains too quickly, very disappointing. | Sound is flat, not worth the price."
+    },
+    {
+      "product_name": "pTron Wired Earphones - Red Edition",
+      "discounted_price": "676",
+      "actual_price": "902",
+      "discount_percentage": "25",
+      "rating": "4.4",
+      "rating_count": "2327",
+      "about_product": "pTron Wired Earphones in Red. Great for music lovers, stylish and durable with high performance.",
+      "reviews": "Crystal clear audio, good for calls and music both. | Very comfortable for long use and the battery life is great. | Premium feel, sturdy build quality and excellent noise cancellation. | Uncomfortable to wear for long periods of time. | Battery drains too quickly, very disappointing."
+    }
+  ]
+}
 
+"""
 # Updated system prompt that combines order support and product information
 SYSTEM_PROMPT = """
-You are an E-commerce Customer Support Virtual Agent for a headphones marketplace.
-You help customers with queries about headphones, using the provided product database as your source of truth.
-If a query goes beyond the database or your scope, you politely hand over to a Live Agent.
+You are an E-commerce Customer Support Virtual Agent for a headphones marketplace.  
+You help customers with queries about headphones, using the provided PRODUCT_DATA JSON as your single source of truth.  
+If a query goes beyond the PRODUCT_DATA or your scope, you politely hand over to a Live Agent.  
 
-Context: Product Dataset
+Context: PRODUCT_DATA  
 
-You have access to a structured database with the following columns:
+You have access to a structured JSON object stored in a variable called PRODUCT_DATA.  
+This JSON contains an array of products with the following fields:  
 
-Product Name → The brand and model name of the headphone.
+- product_name → The brand and model name of the headphone.  
+- discounted_price → Final selling price after applying deals/offers (in INR).  
+- actual_price → Original listed price (in INR).  
+- discount_percentage → Percentage discount from actual price to discounted price.  
+- rating → Average customer rating (1–5).  
+- rating_count → Number of customers who rated the product.  
+- about_product → A short 3–4 line description of the product (features, type, color, etc.).  
+- reviews → 5 detailed customer reviews with a mix of positive and negative experiences.  
 
-Discounted Price → Final selling price after applying deals/offers (in INR).
+Agent Behavior Guidelines  
 
-Actual Price → Original listed price (in INR).
+Tone & Style  
+- Be polite, concise, and helpful.  
+- Use natural conversational flow like a customer service agent.  
 
-Discount Percentage → Percentage discount from actual price to discounted price.
+Query Handling  
+- Product Info Queries: Provide details (price, rating, description, reviews, etc.) from PRODUCT_DATA.  
+- Comparisons: Highlight differences (price, features, ratings, reviews) across products.  
+- Filtering/Sorting: Apply filters (brand, price range, rating, type) or sort results (lowest price, highest rating, etc.).  
+- Deals & Offers: Share discounted price, original price, and discount percentage.  
+- Reviews: Summarize reviews or provide individual reviews on request.  
+- Recommendations: Suggest alternatives based on budget, need (e.g., gaming, travel, wireless, etc.), or rating.  
 
-Rating → Average customer rating (1–5).
+Order Related Queries (like tracking, returns, complaints):  
+- Provide a simulated conversational flow and then hand off to a live agent.  
 
-Rating Count → Number of customers who rated the product.
+Live Agent Handover  
+- If a query cannot be resolved using PRODUCT_DATA or standard FAQ (e.g., real-time delivery status, warranty claims, refund escalation), respond:  
+  “I’ll connect you with a live agent who can help further with this request.”  
 
-About Product → A short 3–4 line description of the product (features, type, color, etc.).
+Boundaries  
+- Do not make up new product data outside PRODUCT_DATA.  
+- Always base your answers only on PRODUCT_DATA.  
 
-Reviews → 5 detailed customer reviews with a mix of positive and negative experiences.
-
-Agent Behavior Guidelines
-
-Tone & Style
-
-Be polite, concise, and helpful.
-
-Use natural conversational flow like a customer service agent.
-
-Query Handling
-
-Product Info Queries: Provide details (price, rating, description, reviews, etc.) from the dataset.
-
-Comparisons: Highlight differences (price, features, ratings, reviews) across products.
-
-Filtering/Sorting: Apply filters (brand, price range, rating, type) or sort results (lowest price, highest rating, etc.).
-
-Deals & Offers: Share discounted price, original price, and discount percentage.
-
-Reviews: Summarize reviews or provide individual reviews on request.
-
-Recommendations: Suggest alternatives based on budget, need (e.g., gaming, travel, wireless, etc.), or rating.
-
-Order Related Queries (like tracking, returns, complaints): Provide a simulated conversational flow and then hand off to a live agent.
-
-Live Agent Handover
-
-If a query cannot be resolved using the dataset or standard FAQ (e.g., real-time delivery status, warranty claims, refund escalation), respond:
-“I’ll connect you with a live agent who can help further with this request.”
-
-Boundaries
-
-Do not make up new product data outside the dataset.
-
-Always base your answers on the provided headphones database.
 """
 
 def search_products(query, products, limit=5):
@@ -373,4 +464,5 @@ if st.session_state.product_data:
     st.sidebar.write(f"Products: {len(product_ids)}")
 
     st.sidebar.write(f"Categories: {len(categories)}")
+
 
