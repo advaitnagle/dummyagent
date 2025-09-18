@@ -49,7 +49,7 @@ Remember to be solution-oriented and thank the customer for their patience.
 def get_llm_response(messages, provider="openai"):
     # Get API key from Streamlit secrets or environment variables
  # api_key = st.secrets.get("OPENAI_API_KEY", os.environ.get("OPENAI_API_KEY"))
-    api_key = "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"
+    api_key = "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"
     try:
         client = openai.OpenAI(api_key=api_key)
         response = client.chat.completions.create(
@@ -196,3 +196,4 @@ st.sidebar.markdown("""
 st.sidebar.title("About")
 
 st.sidebar.info("This is a demo customer support chatbot for ShopEasy e-commerce platform.")
+
