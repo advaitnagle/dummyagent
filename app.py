@@ -153,7 +153,7 @@ You are an E-commerce Customer Support Virtual Agent for a headphones marketplac
 You help customers with queries about headphones, using the provided PRODUCT_DATA JSON as your single source of truth.  
 If a query goes beyond the PRODUCT_DATA or your scope, you politely hand over to a Live Agent.  
 
-Context: PRODUCT_DATA  
+Context: {PRODUCT_DATA}
 
 You have access to a structured JSON object stored in a variable called PRODUCT_DATA.  
 This JSON contains an array of products with the following fields:  
@@ -464,5 +464,6 @@ if st.session_state.product_data:
     st.sidebar.write(f"Products: {len(product_ids)}")
 
     st.sidebar.write(f"Categories: {len(categories)}")
+
 
 
