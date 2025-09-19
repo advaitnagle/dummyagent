@@ -233,9 +233,9 @@ PRODUCT_DATA = """
 FORMATTED_SYSTEM_PROMPT = """
 You are an E-commerce Customer Support Virtual Agent for a headphones marketplace.  
 You help customers with queries about headphones, using the provided PRODUCT_DATA JSON as your source of data.  
-If a query goes beyond the PRODUCT_DATA or your scope, you politely hand over to a Live Agent.  
+You are expected to answer all the queries of the user regarding the products, and if you don't know something, you politely hand over to a Live Agent.  
 
-Context: {0}
+Context: {PRODUCT_DATA}
 
 You have access to a structured JSON object stored in a variable called PRODUCT_DATA.  
 This JSON contains an array of products with the following fields:  
@@ -247,13 +247,14 @@ This JSON contains an array of products with the following fields:
 - rating → Average customer rating (1–5).  
 - rating_count → Number of customers who rated the product.  
 - about_product → A short 3–4 line description of the product (features, type, color, etc.).  
-- reviews → 5 detailed customer reviews with a mix of positive and negative experiences.  
+- reviews → Detailed customer reviews with a mix of positive and negative experiences.  
 
 Agent Behavior Guidelines  
 
 Tone & Style  
 - Be polite, concise, and helpful.  
-- Use natural conversational flow like a customer service agent.  
+- Use natural conversational flow like a customer service agent.
+- Try and ask preferences, do not mechanically display the entire data in front of the user
 
 Query Handling  
 Query Handling – Conversational & Consultative Style
@@ -603,6 +604,8 @@ if prompt := st.chat_input("Type your question here..."):
 # Update sidebar with more product-specific examples
 st.sidebar.title("Example Queries")
 st.sidebar.markdown("""
+
+
 ### Product Related:
 - What are the best headphones under ₹5000?
 - Compare Sony and JBL earphones
@@ -613,18 +616,19 @@ st.sidebar.markdown("""
 - I need headphones for gaming
 
 ### Order Related:
-- What's the status of order #123?
-- I want to return my order #456
-- What's your shipping policy?
-- How do I track my order?
+-I didn’t get my order confirmation SMS. What should I do?
+- What happens if my headphones arrive broken?
+- How long will my refund take?
+- My payment failed but money was deducted. What happens now?
 """)
 
 # About section
 st.sidebar.title("About")
-st.sidebar.info("This is a demo customer support chatbot for a headphones marketplace that can help with product information and basic order tracking.")
+st.sidebar.info("This bot can answer all your queries related to headphones and earphones from top brands like Sony, JBL, Skullcandy, Sennheiser, OnePlus, pTron, Boult, and Noise. You can ask about product details such as type, color, and features; check prices, discounts, and savings; explore customer ratings and reviews; or even compare products to find the best option. In addition to product information, the bot can also help with customer support FAQs such as shipping policies, returns, refunds, warranty, and other service-related questions—making it your one-stop assistant for both shopping guidance and support.")
 
 # Display product count in sidebar
-st.sidebar.title("Product Database Stats")
-st.sidebar.write("Products: 10")
+st.sidebar.title("Database Stats")
+st.sidebar.write("Products: 20, FAQ Knowledge Base linked")
 
 st.sidebar.write("Brands: pTron, Sony, OnePlus, JBL, Skullcandy, Boult")
+
