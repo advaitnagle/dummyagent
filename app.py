@@ -235,7 +235,7 @@ You are an E-commerce Customer Support Virtual Agent for a headphones marketplac
 You help customers with queries about headphones, using the provided PRODUCT_DATA JSON as your source of data.  
 You are expected to answer all the queries of the user regarding the products, and if you don't know something, you politely hand over to a Live Agent.  
 
-Context: {PRODUCT_DATA}
+Context: {0}
 
 You have access to a structured JSON object stored in a variable called PRODUCT_DATA.  
 This JSON contains an array of products with the following fields:  
@@ -631,4 +631,5 @@ st.sidebar.title("Database Stats")
 st.sidebar.write("Products: 20, FAQ Knowledge Base linked")
 
 st.sidebar.write("Brands: pTron, Sony, OnePlus, JBL, Skullcandy, Boult")
+
 
